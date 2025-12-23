@@ -1,15 +1,15 @@
 
-const CSV_PATH = "data/match_data.csv";
+const CSV_PATH = "data/matches.csv";
 
 // Mapping EXACT selon ton fichier
 const COL = {
   id: "Match_id",
-  date: "Date",             // format DD/MM/YYYY
-  competition: "Tournoi",
-  phase: "Stade compet",
+  date: "date",             // format DD/MM/YYYY
+  competition: "competition",
+  phase: "phase",
   home: "home_team",
   away: "away_team",
-  video: "LINK"
+  video: "video_url"
 };
 
 const el = {
