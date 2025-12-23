@@ -1,4 +1,4 @@
-﻿Match_id;Date;Tournoi;Stade compet;home_team;away_team;LINK
-match_001;31/05/2025;Champions League;Finale;Paris SG;Inter Milan;https://www.uefa.tv/video/808117
-match_002;01/06/2024;Champions League;Finale;Dortmund;Real Madrid;https://www.uefa.tv/video/645372
-match_003;10/06/2023;Champions League;Finale;Manchester City;Inter Milan;https://www.uefa.tv/video/488098
+﻿date;competition;phase;home_team;away_team;video_url
+31/05/2025;Champions League;Finale;Paris SG;Inter Milan;https://www.uefa.tv/video/808117
+01/06/2024;Champions League;Finale;Dortmund;Real Madrid;https://www.uefa.tv/video/645372
+10/06/2023;Champions League;Finale;Manchester City;Inter Milan;https://www.uefa.tv/video/488098
