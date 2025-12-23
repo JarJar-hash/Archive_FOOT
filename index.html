@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vidéos de matchs</title>
+  assets/style.css
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>📺 Vidéos de matchs</h1>
+      <p class="subtitle">Filtre par date, compétition, phase, équipe + recherche instantanée</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="panel__row">
+        <div class="field">
+          <label for="dateFrom">Date (du)</label>
+          <input type="date" id="dateFrom" />
+        </div>
+
+        <div class="field">
+          <label for="dateTo">Date (au)</label>
+          <input type="date" id="dateTo" />
+        </div>
+
+        <div class="field">
+          <label for="competition">Compétition</label>
+          <select id="competition">
+            <option value="">Toutes</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="phase">Phase</label>
+          <select id="phase">
+            <option value="">Toutes</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="team">Équipe</label>
+          <select id="team">
+            <option value="">Toutes</option>
+          </select>
+        </div>
+
+        <div class="field field--grow">
+          <label for="q">Recherche</label>
+          <input id="q" type="search" placeholder="Ex: Paris, finale, Inter, 2025..." autocomplete="off" />
+        </div>
+
+        <div class="field field--actions">
+          <label>&nbsp;</label>
+          <button id="resetBtn" class="btn btn--ghost">Réinitialiser</button>
+        </div>
+      </div>
+
+      <div class="panel__meta">
+        <span id="status" class="status">Chargement du CSV…</span>
+        <span id="count" class="count"></span>
+      </div>
+    </section>
+
+    <section class="results">
+      <div id="list" class="grid"></div>
+      <div id="empty" class="empty hidden">
+        Aucun match ne correspond aux filtres.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>GitHub Pages — données chargées depuis <code>data/match_data.csv</code></small>
+    </div>
+  </footer>
+
+  <!-- PapaParse pour parser le CSV correctement -->
+  https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js</script>
+  assets/app.js</script>
+</body>
+</html>
